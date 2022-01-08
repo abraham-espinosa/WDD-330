@@ -1,15 +1,7 @@
 /*Array with link assignments*/
 const links = [{
-    label: "Week1 notes",
-    url: "week1/index.html"
-},
-{
-    label: "Week1 notes",
-    url: "week1/index.html"
-},
-{
-    label: "Week1 notes",
-    url: "week1/index.html"
+    label: "Week 01",
+    url: "W01/index.html"
 }]
 
 /*Get and display links from links*/
