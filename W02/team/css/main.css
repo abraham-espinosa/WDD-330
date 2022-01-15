@@ -1,0 +1,29 @@
+
+        input[type='number'] {
+            width: 40px;
+            display: inline-block;
+            padding: 3px;
+            max-width: 4;
+            border: 1px solid blue;
+            text-align: left;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+      
+        .outputDiv {
+            width: 400px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        label {
+            font-size: 20px;
+        }

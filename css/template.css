@@ -4,8 +4,20 @@ body{
 }
 
 header{
-    background-color: #ced4da;
+    background-color: #10263b;
+    color: white;
+    padding: 10px;
 }
+
+header a {
+    text-decoration: none;
+}
+
+header a:active, header a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
 
 .centered {
     text-align: center;

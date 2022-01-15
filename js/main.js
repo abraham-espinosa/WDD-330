@@ -5,7 +5,7 @@ const links = [{
 },
 {
     label: "Week 02",
-    url: "W02/readings.html"
+    url: "W02/index.html"
 }]
 
 /*Get and display links from links*/

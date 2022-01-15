@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Machine</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="../../css/template.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back</a>
+    </header>
+    <h1>Adding Machine</h1>
+    <div class="container">
+        <!-- 1 - write a function that will read the contents of the input, and write them to the div.  -->
+        <h2>Send the content of input to div</h2>
+        <div>
+            <input type="text" id="txt1" name="txt1">
+            <input type="submit" value="Try Me" onclick="sendToDiv()">
+        </div>
+        <div class="outputDiv" id="outputTxt1"></div>
+
+        <!-- 2 - write a function that will read the contents of the input, and write them to the div.  -->
+        <h2>Total of Sums</h2>
+        <div>
+            <input type="number" id="number2" name="number2">
+            <input type="submit" value="Try Me" onclick="sum()">
+        </div>
+        <div class="outputDiv" id="outputNum2"></div>
+
+        <!-- 3 - write a function that will read the contents of the input, and write them to the div.  -->
+        <h2>Adding Machine</h2>
+        <div>
+            <input type="number" id="number3-a" name="number3-a">
+            +
+            <input type="number" id="number3-b" name="number3-b">
+            <input type="submit" value="Try Me" onclick="add()">
+        </div>
+        <div class="outputDiv" id="outputNum3"></div>
+
+        <!-- 4 - write a function that will read the contents of the input, and write them to the div.  -->
+        <h2>Multiplying Machine</h2>
+        <div>
+            <input type="number" id="number4-a" name="number4-a">
+            *
+            <input type="number" id="number4-b" name="number4-b">
+            <input type="submit" value="Try Me" onclick="multiply()">
+        </div>
+        <div class="outputDiv" id="outputNum4"></div>
+
+        <!-- 5 - write a function that will read the contents of the input, and write them to the div.  -->
+        <h2>Subtracting Machine</h2>
+        <div>
+            <input type="number" id="number5-a" name="number5-a">
+            -
+            <input type="number" id="number5-b" name="number5-b">
+            <input type="submit" value="Try Me" onclick="subtract()">
+        </div>
+        <div class="outputDiv" id="outputNum5"></div>
+
+    </div>
+</body>
+
+</html>
