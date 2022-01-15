@@ -18,4 +18,29 @@ const reverseArray = (inputArray) => {
 
 console.log("Reverse Array: " + reverseArray([1,2,3]));
 
+//Count Bs
+const countBs = (inputString) => {
+    let counting = 0;
+    for (let i = 0; i < inputString.length; i++){
+        if (inputString[i] == "B") {
+            counting += 1;
+        }
+    }
+    return counting;
+}
+
+console.log("Count Bs: " + countBs("CBCBC"));
+
+//Count Chars 
+const countChar = (inputString, char) => {
+    let counting = 0;
+    for (let i = 0; i < inputString.length; i++){
+        if (inputString[i] == char){
+            counting +=1;
+        }
+    }
+    return counting;
+}
+
+console.log("Count Char: " + countChar("AFKSLKK", "K"));
 
