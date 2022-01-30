@@ -10,6 +10,10 @@ const links = [{
 {
     label: "Week 03",
     url: "W03/index.html"
+},
+{
+    label: "Week 04",
+    url: "W04/index.html"
 }]
 
 /*Get and display links from links*/
