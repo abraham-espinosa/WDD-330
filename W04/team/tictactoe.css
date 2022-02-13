@@ -1,0 +1,17 @@
+.board {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.board>div {
+    border: 1px solid;
+    text-align: center;
+    background-color: rgb(117, 117, 112);
+    font-size: 4rem;
+}
+
+#reset {
+    background-color: tomato;
+}
