@@ -1,0 +1,47 @@
+body {
+    font-family: Montserrat, sans-serif;
+  }
+  main {
+    display: flex;
+    flex-flow: column wrap;
+  }
+    
+  #detailsbox dl {
+    border: 1px solid;
+    text-align: left;
+  }
+  
+  #shiplist {
+    flex-flow: row wrap;
+    list-style-type: none;
+  }
+  
+  #shiplist thead,  #prev, #next {
+    background-color: rgb(20, 37, 83);
+    color: white;
+    text-align: left;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #shiplist td {
+    cursor: pointer;
+  }
+  
+  #detailsbox {
+    flex: 1 0 15em;
+    padding: 1em;
+    text-align: left;
+    border: 2px solid;
+  }
+
+  #shiplist tr {
+    padding: 2em;
+    height: 15px;
+  }
+
+  #next, #prev {
+    padding: .1rem;
+  }
