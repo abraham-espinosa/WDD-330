@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="readings.css">
+    <link rel="stylesheet" href="../../css/template.css">
+    <title>W10 Readings</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back</a>
+    </header>
+    <h3>Client-side form validation</h3>
+    <ul>
+        <li>Make sure all required forms are filled out in the correct way. We ensure that data is submitted according
+            to the requirements.</li>
+        <li>My app should use server-side and client-side to have a strong security.</li>
+        <li>Some examples: "This field is required", "Please enter your phone number in the format xxx-xxxx", "Please
+            enter a valid email address", "Your password needs to be between 8 and 30 characters long and contain one
+            uppercase letter, one symbol, and a number." </li>
+    </ul>
+    <h3>Using built-in form validation</h3>
+    <ul>
+        <li>Use validation attributes on form elements, for example, required, minlength, maxlength, type, pattern, min
+            and max.</li>
+        <li>
+            <form>
+                <label for="choose">Would you prefer a banana or cherry? (required)</label>
+                <input id="choose" name="i_like" required>
+                <button>Submit</button>
+            </form>
+        </li>
+        <li>
+            <form>
+                <label for="choose">Would you prefer a banana or a cherry?</label>
+                <input id="choose" name="i_like" required pattern="[Bb]anana|[Cc]herry">
+                <button>Submit</button>
+            </form>
+        </li>
+        <li>
+            <form>
+                <div>
+                    <label for="choose">Would you prefer a banana or a cherry?</label>
+                    <input type="text" id="choose" name="i_like" required minlength="6" maxlength="6">
+                </div>
+                <div>
+                    <label for="number">How many would you like?</label>
+                    <input type="number" id="number" name="amount" value="1" min="1" max="10">
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>
+        </li>
+    </ul>
+    <h3>The Constraint Validation API</h3>
+    <p>Most browsers support the Constraint Validation API, which consists of a set of methods and properties available on the following form element DOM interfaces:</p>
+    <ul>
+        <li>HTMLButtonElement (represents a button element)</li>
+        <li>HTMLFieldSetElement (represents a element)</li>
+        <li>HTMLInputElement (represents an input element)</li>
+        <li>HTMLInputElement (represents an input element)</li>
+        <li>HTMLInputElement (represents an input element)</li>
+        <li>HTMLTextAreaElement (represents a textarea element)</li>
+    </ul>
+    <h3>Using the Fetch API</h3>
+    <p>Fetch API access and manipulate HTTP requests and responses. </p>
+    <ul>
+        <li>fetch('http://example.com/movies.json')
+            .then(response => response.json())
+            .then(data => console.log(data));
+        </li>
+    </ul>
+</body>
+
+</html>
