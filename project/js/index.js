@@ -1,11 +1,9 @@
   /* add button */
-  // localStorage.setItem("tasks", JSON.stringify(tasks));
   try {
       var tasks = JSON.parse(localStorage.getItem("tasks"));
-
   } catch (err) {
       var tasks = [];
-
+      localStorage.setItem("tasks", JSON.stringify(tasks));
   }
 
   document.getElementById('totalAmount').innerText = "Total Amount: $" + tasks.reduce((acc, incomes) => acc + incomes.amount, 0);
@@ -69,19 +67,18 @@
   ];
 
   new Chart("myChart", {
-      type: "doughnut",
-      data: {
+        type: "doughnut",
+        data: {
           labels: xValues,
           datasets: [{
               backgroundColor: barColors,
               data: yValues
           }]
-      },
-      options: {
+        },
+        options: {
           title: {
               display: true,
               text: "Income vs Expenses"
-          }
-          
+          } 
       }
   });
